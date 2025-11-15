@@ -7,6 +7,10 @@ import {
 } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
 
+// Import Navbar & Footer
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+
 // Import halaman
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
@@ -18,7 +22,9 @@ import PesananSaya from './pages/PesananSaya'
 export default function App() {
   return (
     <Router>
+      <Navbar /> {/* ← Tambahkan di sini */}
       <AnimatedRoutes />
+      <Footer /> {/* ← Tambahkan kalau mau Footer selalu muncul */}
     </Router>
   )
 }
