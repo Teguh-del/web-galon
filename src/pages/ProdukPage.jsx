@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import axios from 'axios'
 
 export default function ProdukPage() {
@@ -125,7 +123,6 @@ export default function ProdukPage() {
 
   return (
     <div className="font-sans text-gray-800 bg-white min-h-screen flex flex-col">
-      <Navbar />
       <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8 flex-1">
         <h3 className="text-2xl font-bold mb-8 text-center text-gray-800">
           Produk Kami
@@ -184,7 +181,6 @@ export default function ProdukPage() {
           </div>
         )}
       </div>
-      <Footer />
 
       {/* Modal Form Pemesanan */}
       {showForm && produkDipilih && (

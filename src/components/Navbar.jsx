@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6">
         <div className="flex items-center space-x-2">
           <img
-            src="/logo192.png"
+            src="/galong.png"
             alt="GalonKu Logo"
             className="w-8 h-8 rounded-md object-cover" 
           />

@@ -22,10 +22,25 @@ import PesananSaya from './pages/PesananSaya'
 export default function App() {
   return (
     <Router>
-      <Navbar /> {/* ← Tambahkan di sini */}
-      <AnimatedRoutes />
-      <Footer /> {/* ← Tambahkan kalau mau Footer selalu muncul */}
+      <LayoutWithHide />
     </Router>
+  )
+}
+
+function LayoutWithHide() {
+  const location = useLocation()
+
+  // List halaman yang tidak boleh menampilkan Navbar dan Footer
+  const hideLayout = ["/login", "/register", "/dashboard","/pesanan-saya" ].includes(location.pathname)
+
+  return (
+    <>
+      {!hideLayout && <Navbar />}
+
+      <AnimatedRoutes />
+
+      {!hideLayout && <Footer />}
+    </>
   )
 }
 

@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import { motion } from 'framer-motion'
 
 export default function HomePage() {
@@ -33,12 +31,11 @@ export default function HomePage() {
 
   return (
     <div className="font-sans text-gray-800 bg-white min-h-screen">
-      <Navbar />
       <section className="bg-blue-50 py-16 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8">
           <div className="flex-shrink-0 w-full md:w-1/2 flex justify-center">
             <img
-              src="/logo192.png" 
+              src="/galong.png" 
               alt="Air Minum Isi Ulang GalonKu"
               className="rounded-xl shadow-lg max-w-full h-auto object-cover"
               style={{ maxHeight: '400px' }}
@@ -65,7 +62,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   )
 }
