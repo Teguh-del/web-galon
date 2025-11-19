@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { motion } from 'framer-motion'
 
-const API_BASE = 'http://localhost/backend'
+const API_BASE = 'https://galon.kesug.com/api'
 
 export default function PesananSaya() {
   const navigate = useNavigate()

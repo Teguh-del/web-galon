@@ -3,7 +3,7 @@ import axios from 'axios'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 
-const API_BASE = 'https://galon.kesug.com/api/login.php' // ✅ pastikan ini ada
+const API_BASE = 'https://galon.kesug.com/api' // ✅ pastikan ini ada
 
 export default function LoginPage() {
   const navigate = useNavigate()

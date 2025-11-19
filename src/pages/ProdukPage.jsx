@@ -12,7 +12,7 @@ export default function ProdukPage() {
   // Ambil data produk dari backend
   useEffect(() => {
     axios
-      .get('http://localhost/backend/get_produk.php')
+      .get('https://galon.kesug.com/api/get_produk.php')
       .then((res) => {
         const data = Array.isArray(res.data) ? res.data : []
         setProdukList(data)
@@ -80,7 +80,7 @@ export default function ProdukPage() {
 
     try {
       const res = await axios.post(
-        'http://localhost/backend/tambah_pemesanan.php',
+        'https://galon.kesug.com/api/tambah_pemesanan.php',
         payload
       )
 
@@ -110,7 +110,7 @@ export default function ProdukPage() {
   const getGambarUrl = (gambar) => {
     if (!gambar) return '/logo192.png'
     if (gambar.startsWith('http')) return gambar
-    return `http://localhost/backend/uploads/${gambar}`
+    return `https://galon.kesug.com/api/uploads/${gambar}`
   }
 
   if (loading) {

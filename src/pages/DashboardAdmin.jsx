@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { motion } from 'framer-motion'
 
-const API_BASE = 'http://localhost/backend'
+const API_BASE = 'https://galon.kesug.com/api'
 
 export default function DashboardAdmin() {
   const [updatingId, setUpdatingId] = useState(null)
